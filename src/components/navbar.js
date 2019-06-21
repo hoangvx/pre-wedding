@@ -21,8 +21,10 @@ class NavBar extends React.Component {
         render={data => (
           <nav className="navbar is-fixed-top ht-navbar" role="navigation" aria-label="main navigation">
             <div className="navbar-brand ht-logo">
-              <Img className="ht-brand" fluid={ data.logo.childImageSharp.fluid } /> 
-              <a role="button" onClick={this.toggleMenu} className={`navbar-burger burger ${this.state.activeMenu ? 'is-active' : ''}`} aria-label="menu" aria-expanded="false" data-target="ht-navbar-mobile">
+              <a className="navbar-item ht-brand" href="/">
+                <Img className="ht-brand-img" fluid={ data.logo.childImageSharp.fluid } /> 
+              </a>
+              <a role="button" href="#top" onClick={this.toggleMenu} className={`navbar-burger burger ${this.state.activeMenu ? 'is-active' : ''}`} aria-label="menu" aria-expanded="false" data-target="ht-navbar-mobile">
                 <span aria-hidden="true"></span>
                 <span aria-hidden="true"></span>
                 <span aria-hidden="true"></span>

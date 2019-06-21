@@ -10,7 +10,7 @@ const BreadCrumb = ({ root, page }) => {
               <nav className="breadcrumb" aria-label="breadcrumbs">
                 <ul>
                   <li><a href={`/${root}`}>{root}</a></li>
-                  <li className="is-active"><a href="#" aria-current="page">{page}</a></li>
+                  <li className="is-active"><a href="#top" aria-current="page">{page}</a></li>
                 </ul>
               </nav>
             ) : null

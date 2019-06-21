@@ -11,6 +11,10 @@ h1, h2, h3 {
   font-family: $font-dancing;
 }
 
+iframe {
+  min-height: 400px;
+}
+
 
 .ht-banner-bg {
   background: url(./banner/1.jpg);
@@ -85,8 +89,7 @@ h1, h2, h3 {
   h3 {
     font-size: 30px;
     color: #f07677;
-    text-transform: capitalize;
-    font-family: $font-sriracha;
+    font-family: $font-lora;
     margin: 35px 0px 0px 0px;
   }
 
@@ -94,7 +97,7 @@ h1, h2, h3 {
     font-size: 40px;
     color: #111111;
     text-transform: uppercase;
-    font-family: $font-sriracha;
+    font-family: $font-lora;
     margin: 10px 0px 10px 0px;
   }
 
@@ -156,13 +159,11 @@ h1, h2, h3 {
         font-weight: 400;
         font-size: 30px;
         color: #f07677;
-        font-family: 'Great Vibes', cursive;
       }
 
       h1 {
-        font-size: 40px;
+        font-size: 50px;
         color: #fff;
-        font-family: 'Lora', serif;
       }
     }
 
@@ -264,21 +265,36 @@ h1, h2, h3 {
 
 .ht-place-map {
   margin-top: 30px;
-  height: calc((100vh - 350px) / 2);
+  min-height: calc((100vh - 350px) / 2);
 
   .ht-right {
-    justify-content: flex-end;
-    text-align: right !important;
-    padding-right: 20px;
+    justify-content: flex-start;
+    padding-left: 20px;
+    
+    div.tile {
+      text-align: left !important;
+      p, h1, h2, h3 {
+        padding: 10px 0;
+        font-family: $font-roboto;
+        font-style: italic;
+      }
+    }
   }
   .ht-left {
-    justify-content: flex-start;
-    text-align: left !important;
-    padding-left: 20px;
+    justify-content: flex-end;
+    padding-right: 20px;
+
+    div.tile {
+      text-align: right !important;
+      p, h1, h2, h3 {
+        padding: 10px 0;
+        font-family: $font-roboto;
+        font-style: italic;
+      }
+    }
   }
 
   h1 {
-    font-family: $font-sriracha;
     font-size: 1.8em;
   }
 
@@ -298,7 +314,6 @@ h1, h2, h3 {
     padding: 0 40px;
     h1 {
       color: $ht-lightred;
-      font-family: $font-dancing;
       font-size: 40px;
     }
     p {

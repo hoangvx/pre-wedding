@@ -30,7 +30,6 @@ class Stories extends React.Component {
               </div>
               <div className="tile is-vertical">
                 {posts.map(({ node }, idx) => {
-                  const title = node.frontmatter.title || node.fields.slug
                   const isOdd = idx % 2 !== 0
                   return (
                     <div key={node.fields.slug} className="ht-stories-item">
@@ -41,7 +40,7 @@ class Stories extends React.Component {
                         <h1>{node.frontmatter.title}</h1>
                         <h3><FontAwesomeIcon icon={faCalendar} />{node.frontmatter.date}</h3>
                         <p>{node.excerpt}</p>
-                        <Link className="button is-outlined is-link" to={`stories/${node.fields.slug}`}>
+                        <Link className="button is-outlined is-link" to={`/stories${node.fields.slug}`}>
                           <span>Đọc Tiếp</span>
                           <span className="icon">
                             <FontAwesomeIcon icon={faArrowRight} />
@@ -64,11 +63,6 @@ export default Stories
 
 export const pageQuery = graphql`
   query {
-    site {
-      siteMetadata {
-        title
-      }
-    }
     headding: file(relativePath: { eq: "headding.png" }) {
       childImageSharp {
         fixed(width: 177, height: 22) {

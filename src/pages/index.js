@@ -1,5 +1,5 @@
 import React from "react"
-import { Link, graphql } from "gatsby"
+import { graphql } from "gatsby"
 import moment from "moment"
 
 import SEO from "../components/seo"
@@ -14,7 +14,6 @@ class TopPage extends React.Component {
 
   constructor(props) {
     super(props)
-    this._handleScroll = this._handleScroll.bind(this);
     const { data } = props
     moment.locale('vi');
     let today = moment()
@@ -22,26 +21,7 @@ class TopPage extends React.Component {
     let duration = moment.duration(diff, 'milliseconds')
     this.state = { duration }
   }
-
-  _handleCountDown() {
-    let { duration }  = this.state
-    this.setState({
-      duration: moment.duration(duration.as('milliseconds') - 1000, 'milliseconds')
-    })
-  }
-
-  _handleScroll(e) {
-    console.log('scrolling')
-  }
-  componentDidMount() {
-    window.addEventListener('scroll', this._handleScroll);
-    this.interval = setInterval(() => this._handleCountDown(), 1000)
-  }
-
-  componentWillUnmount() {
-    window.removeEventListener('scroll', this._handleScroll);
-    clearInterval(this.interval);
-  }
+  // componentDidMount() {}
 
   render() {
     const { data } = this.props
@@ -149,7 +129,7 @@ class TopPage extends React.Component {
             <div className="container is-widescreen">
               <div className="tile is-vertical ht-padtop">
                 <div className="tile ht-gallery-title">
-                  <h1>Thân mời | Gửi Lời Chúc</h1>
+                  <h1>Gửi Lời Chúc</h1>
                 </div>
                 <div className="tile ht-gallery-title">
                   <Img fixed={data.headding.childImageSharp.fixed} />
@@ -174,14 +154,11 @@ class TopPage extends React.Component {
                     </p>
                     <p>Để có thể đón tiếp chu đáo nhất, hãy cho chúng mình biết bạn có thể tham gia hay không và số lượng người tham gia nhé! </p>
                     <p className="has-text-right">From Japan with big love </p>
-                    <div className="tile ht-gallery-title" >
-                      <h4 className="has-text-right"> Hoàng & Trang</h4>
-                    </div>
+                    <h1 className="has-text-right">Hoàng & Trang</h1>
                     <h1 className="has-text-right">Trân trọng!</h1>
                   </div>
                   <div className="tile is-6 ht-form">
-                  <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSePOVzpYWddAurfr9TOpHYh34KjXT6YGZ_956x_nWortpDw0A/viewform?embedded=true" width="640" height="628" frameborder="0" marginheight="0" marginwidth="0">Đang tải...</iframe>
-                    {/* <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfgFpQKSSHddqeJsIo792liorHnSiW8XTfuiJx39cHPNdrqWQ/viewform?embedded=true" width="640" height="628" frameBorder="0" marginHeight="0" marginWidth="0">Đang tải...</iframe> */}
+                    <iframe title="ggs" src="https://docs.google.com/forms/d/e/1FAIpQLSePOVzpYWddAurfr9TOpHYh34KjXT6YGZ_956x_nWortpDw0A/viewform?embedded=true" width="640" height="628" frameBorder="0">Loadding...</iframe>
                   </div>
                 </div>
               </div>
@@ -190,7 +167,7 @@ class TopPage extends React.Component {
         </Banner>
         <Banner bgClass="ht-pattern-bg1">
           <div className="hero-body ht-card">
-            <div className="container is-widescreen">
+            <div className="container ht-place-map is-widescreen">
               <div className="tile is-vertical ht-padtop">
                 <div className="tile ht-card-title">
                   <h1>Địa điểm nhà gái</h1>
@@ -201,11 +178,11 @@ class TopPage extends React.Component {
                 <div className="tile is-vertical">
                   <div className="tile">
                     <div className="tile ht-card-title">
-                    <div className="tile ht-right">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3805.608611670935!2d106.62016345102359!3d17.478437287965267!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31475729edd74511%3A0xb217ea600005190c!2zMjUgUGhhbiBDaHUgVHJpbmgsIMSQ4buTbmcgTeG7uSwgxJDhu5NuZyBI4bubaSwgUXXhuqNuZyBCw6xuaCwgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2sjp!4v1560052811536!5m2!1svi!2sjp" width="600" height="450" frameBorder="0" style={{border:0}} allowFullScreen></iframe>
+                      <div className="tile ht-left">
+                        <iframe title="if1" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3805.608611670935!2d106.62016345102359!3d17.478437287965267!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31475729edd74511%3A0xb217ea600005190c!2zMjUgUGhhbiBDaHUgVHJpbmgsIMSQ4buTbmcgTeG7uSwgxJDhu5NuZyBI4bubaSwgUXXhuqNuZyBCw6xuaCwgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2sjp!4v1560052811536!5m2!1svi!2sjp" width="600" height="450" frameBorder="0" style={{border:0}} allowFullScreen></iframe>
                       </div>
-                    <div className="tile ht-left">
-                        <div>
+                      <div className="tile ht-right">
+                        <div className="tile is-vertical">
                           <h2> Hôn lễ được cử hành tại tư gia nhà gái </h2>
                           <h3> Vào lúc 09:30 ngày 22/7/2019</h3>
                           <p> 25 Phan Chu Trinh, Đồng Mỹ, Đồng Hới, Quảng Bình, Việt Nam</p>
@@ -215,30 +192,37 @@ class TopPage extends React.Component {
                   </div>
                   <div className="tile">
                     <div className="tile ht-card-title">
+                      <div className="tile ht-left">
+                        <iframe title="if2" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15223.560002856604!2d106.6186307!3d17.4649782!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x91d292fcbb7b2557!2zTmjDoCBIw6BuZyBUaeG7h2MgQ8aw4bubaSBSb3lhbCAtIEPDtG5nIFR5IFROSEggWEQgJiBUTSBI4bqjaSBUaMOgbmg!5e0!3m2!1sen!2sjp!4v1561020814787!5m2!1sen!2sjp" width="600" height="450" frameBorder="0" style={{border:0}} allowFullScreen></iframe>
+                      </div>
                       <div className="tile ht-right">
-                        <div>
+                        <div className="tile is-vertical">
                           <h2>Tiệc cưới diễn ra tại Nhà hàng Tiệc cưới Royal Queen </h2>
                           <h3>Vào 17:00 ngày 22/7/2019</h3>
                           <p>53 Nguyễn Hữu Cảnh, TP.Đồng Hới, Quảng Bình</p>
                         </div>
                       </div>
-                      <div className="tile ht-left">
-                        {/* <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3895.358855090208!2d107.78359795097634!3d12.492356991128256!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTLCsDI5JzMyLjUiTiAxMDfCsDQ3JzA4LjkiRQ!5e0!3m2!1svi!2sjp!4v1560052402202!5m2!1svi!2sjp" width="600" height="450" frameBorder="0" style={{border:0}} allowFullScreen></iframe> */}
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15223.560002856604!2d106.6186307!3d17.4649782!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x91d292fcbb7b2557!2zTmjDoCBIw6BuZyBUaeG7h2MgQ8aw4bubaSBSb3lhbCAtIEPDtG5nIFR5IFROSEggWEQgJiBUTSBI4bqjaSBUaMOgbmg!5e0!3m2!1sen!2sjp!4v1561020814787!5m2!1sen!2sjp" width="600" height="450" frameborder="0" style={{border:0}} allowfullscreen></iframe>
-                      </div>
                     </div>
                   </div>
+                </div>
+                <div className="tile ht-card-title">
+                  <h1>Địa điểm nhà trai</h1>
+                </div>
+                <div className="tile ht-card-title">
+                  <Img fixed={data.headding.childImageSharp.fixed} />
+                </div>
+                <div className="tile is-vertical">
                   <div className="tile">
                     <div className="tile ht-card-title">
+                      <div className="tile ht-left">
+                        <iframe title="if3" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3895.358855090208!2d107.78359795097634!3d12.492356991128256!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTLCsDI5JzMyLjUiTiAxMDfCsDQ3JzA4LjkiRQ!5e0!3m2!1svi!2sjp!4v1560052402202!5m2!1svi!2sjp" width="600" height="450" frameBorder="0" style={{border:0}} allowFullScreen></iframe>
+                      </div>
                       <div className="tile ht-right">
-                        <div>
+                        <div className="tile is-vertical">
                           <h2>Hôn lễ được cử hành tại tư gia nhà trai </h2>
                           <h3>Vào lúc 10:00 ngày 26/7/2019</h3>
                           <p>178 Thanh Sơn, Nam Xuân, Krông Nô, Đak Nông, Việt Nam</p>
                         </div>
-                      </div>
-                      <div className="tile ht-left">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3895.358855090208!2d107.78359795097634!3d12.492356991128256!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTLCsDI5JzMyLjUiTiAxMDfCsDQ3JzA4LjkiRQ!5e0!3m2!1svi!2sjp!4v1560052402202!5m2!1svi!2sjp" width="600" height="450" frameBorder="0" style={{border:0}} allowFullScreen></iframe>
                       </div>
                     </div>
                   </div>
@@ -263,29 +247,6 @@ class TopPage extends React.Component {
                 </div>
                 <div className="tile">
                   <Gallery />
-                </div>
-              </div>
-            </div>
-          </div>
-        </Banner>
-        <Banner sizeClass="is-small" bgClass="ht-pattern-bg1">
-          <div className="hero-body ht-card">
-            <div className="container is-widescreen">
-              <div className="tile ht-fb">
-                <div className="tile is-vertical">
-                  <img src="http://graph.facebook.com/100001147277648/picture?type=normal" />
-                  <a target="_blank" href="https://www.facebook.com/profile.php?id=100001147277648">
-                    <span> HoangVX</span>
-                  </a>
-                </div>
-                <div className="tile is-1 ht-divide-vertical">
-                  <h4>OR</h4>
-                </div>
-                <div className="tile is-vertical">
-                  <img src="http://graph.facebook.com/100009074477752/picture?type=normal" />
-                  <a target="_blank" href="https://www.facebook.com/profile.php?id=100009074477752">
-                    <span> TrangDTK</span>
-                  </a>
                 </div>
               </div>
             </div>

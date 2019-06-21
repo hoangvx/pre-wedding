@@ -1,4 +1,4 @@
-import React, { Children } from "react"
+import React from "react"
 
 const Banner = ({ children, bgClass, sizeClass, ...props }) => (
   <section className={`hero ${sizeClass ? sizeClass : 'is-fullheight'} ${bgClass}`}

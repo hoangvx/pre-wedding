@@ -7,12 +7,22 @@
 
   .ht-brand {
     width: 300px;
+    .ht-brand-img {
+      width: 100%;
+    }
+    img {
+      max-height: 100px;
+    }
+
+    &:hover {
+      background-color: transparent !important;
+    }
   }
 
   @include mobile-only {
     height: auto;
-    .ht-brand {
-      width: 200px;
+    .ht-brand-img {
+      // width: 200px;
     }
   }
 
