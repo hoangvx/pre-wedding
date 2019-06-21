@@ -92,7 +92,7 @@ class TopPage extends React.Component {
                     <p></p>
                   </div>
                   <div className="tile is-4 is-vertical ht-card-info">
-                    <h2>Sau 3 năm 7 tháng 15 ngày yêu nhau, chúng tớ đã quyết định </h2>
+                    <h2>Sau 3 năm 7 tháng 15 ngày yêu, chúng tớ đã quyết định về chung một nhà từ ngày </h2>
                     <h3>{ weddingDateFmt }</h3>
                     <h1>SAVE THE DATE</h1>
                     {/* <p>Việt Nam</p> */}
@@ -108,6 +108,9 @@ class TopPage extends React.Component {
                       ))
                     }
                   </div>
+                </div>
+                <div className="tile ht-card-title">
+                  <Img fixed={data.headding.childImageSharp.fixed} />
                 </div>
                 <div className="tile is-vertical ">
                   <div className="ht-divide">
@@ -140,6 +143,110 @@ class TopPage extends React.Component {
             </div>
           </div>
         </Banner>
+        <Banner bgClass="ht-pattern-bg3">
+          <div className="ht-mask"/>
+          <div className="hero-body ht-gallery">
+            <div className="container is-widescreen">
+              <div className="tile is-vertical ht-padtop">
+                <div className="tile ht-gallery-title">
+                  <h1>Thân mời | Gửi Lời Chúc</h1>
+                </div>
+                <div className="tile ht-gallery-title">
+                  <Img fixed={data.headding.childImageSharp.fixed} />
+                </div>
+                <div className="tile ht-guest">
+                  <div className="tile is-6 is-vertical ht-somewords">
+                    <h1>Thân Mời</h1>
+                    <p> 
+                      Ngay từ những ngày đầu chuẩn bị cho lễ cưới, cả hai đã ấp ủ cho mình một trang web cưới - như là một nơi lưu giữ, đếm ngược lại sự kiện trọng đại này của mình và cũng sẽ là cầu nối gửi lời mời của chúng mình đến bạn bè và người thân ở khắp mọi nơi. 
+                    </p>
+                    <p>
+                      Thân gửi lời mời trân trọng nhất đến anh, chị em, bạn bè cùng người thương đến chung vui cùng Hoàng và Trang trong ngày vui của chúng mình. 
+                    </p>
+                    <p>
+                      Đây không chỉ là dịp thể hiện tình cảm và sự yêu quý của mọi người dành cho cả 2 đứa mình mà còn là dịp để chúng ta gặp mặt nhau sau nhiều ngày, nhiều tháng, nhiều năm xa cách.
+                    </p>
+                    <p>  
+                      Nếu có thể sắp xếp được thời gian và công việc hãy cùng đồng hành với chúng mình trong vui và ngày trọng đại này nhé!
+                    </p>
+                    <p>
+                      Trong trường hợp không thể tham gia được, còn chần chừ gì nữa mà không gửi cho chúng mình những lời chúc có cánh!
+                    </p>
+                    <p>Để có thể đón tiếp chu đáo nhất, hãy cho chúng mình biết bạn có thể tham gia hay không và số lượng người tham gia nhé! </p>
+                    <p className="has-text-right">From Japan with big love </p>
+                    <div className="tile ht-gallery-title" >
+                      <h4 className="has-text-right"> Hoàng & Trang</h4>
+                    </div>
+                    <h1 className="has-text-right">Trân trọng!</h1>
+                  </div>
+                  <div className="tile is-6 ht-form">
+                  <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSePOVzpYWddAurfr9TOpHYh34KjXT6YGZ_956x_nWortpDw0A/viewform?embedded=true" width="640" height="628" frameborder="0" marginheight="0" marginwidth="0">Đang tải...</iframe>
+                    {/* <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfgFpQKSSHddqeJsIo792liorHnSiW8XTfuiJx39cHPNdrqWQ/viewform?embedded=true" width="640" height="628" frameBorder="0" marginHeight="0" marginWidth="0">Đang tải...</iframe> */}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </Banner>
+        <Banner bgClass="ht-pattern-bg1">
+          <div className="hero-body ht-card">
+            <div className="container is-widescreen">
+              <div className="tile is-vertical ht-padtop">
+                <div className="tile ht-card-title">
+                  <h1>Địa điểm nhà gái</h1>
+                </div>
+                <div className="tile ht-card-title">
+                  <Img fixed={data.headding.childImageSharp.fixed} />
+                </div>
+                <div className="tile is-vertical">
+                  <div className="tile">
+                    <div className="tile ht-card-title">
+                    <div className="tile ht-right">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3805.608611670935!2d106.62016345102359!3d17.478437287965267!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31475729edd74511%3A0xb217ea600005190c!2zMjUgUGhhbiBDaHUgVHJpbmgsIMSQ4buTbmcgTeG7uSwgxJDhu5NuZyBI4bubaSwgUXXhuqNuZyBCw6xuaCwgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2sjp!4v1560052811536!5m2!1svi!2sjp" width="600" height="450" frameBorder="0" style={{border:0}} allowFullScreen></iframe>
+                      </div>
+                    <div className="tile ht-left">
+                        <div>
+                          <h2> Hôn lễ được cử hành tại tư gia nhà gái </h2>
+                          <h3> Vào lúc 09:30 ngày 22/7/2019</h3>
+                          <p> 25 Phan Chu Trinh, Đồng Mỹ, Đồng Hới, Quảng Bình, Việt Nam</p>
+                        </div>
+                      </div> 
+                    </div>
+                  </div>
+                  <div className="tile">
+                    <div className="tile ht-card-title">
+                      <div className="tile ht-right">
+                        <div>
+                          <h2>Tiệc cưới diễn ra tại Nhà hàng Tiệc cưới Royal Queen </h2>
+                          <h3>Vào 17:00 ngày 22/7/2019</h3>
+                          <p>53 Nguyễn Hữu Cảnh, TP.Đồng Hới, Quảng Bình</p>
+                        </div>
+                      </div>
+                      <div className="tile ht-left">
+                        {/* <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3895.358855090208!2d107.78359795097634!3d12.492356991128256!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTLCsDI5JzMyLjUiTiAxMDfCsDQ3JzA4LjkiRQ!5e0!3m2!1svi!2sjp!4v1560052402202!5m2!1svi!2sjp" width="600" height="450" frameBorder="0" style={{border:0}} allowFullScreen></iframe> */}
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15223.560002856604!2d106.6186307!3d17.4649782!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x91d292fcbb7b2557!2zTmjDoCBIw6BuZyBUaeG7h2MgQ8aw4bubaSBSb3lhbCAtIEPDtG5nIFR5IFROSEggWEQgJiBUTSBI4bqjaSBUaMOgbmg!5e0!3m2!1sen!2sjp!4v1561020814787!5m2!1sen!2sjp" width="600" height="450" frameborder="0" style={{border:0}} allowfullscreen></iframe>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="tile">
+                    <div className="tile ht-card-title">
+                      <div className="tile ht-right">
+                        <div>
+                          <h2>Hôn lễ được cử hành tại tư gia nhà trai </h2>
+                          <h3>Vào lúc 10:00 ngày 26/7/2019</h3>
+                          <p>178 Thanh Sơn, Nam Xuân, Krông Nô, Đak Nông, Việt Nam</p>
+                        </div>
+                      </div>
+                      <div className="tile ht-left">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3895.358855090208!2d107.78359795097634!3d12.492356991128256!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTLCsDI5JzMyLjUiTiAxMDfCsDQ3JzA4LjkiRQ!5e0!3m2!1svi!2sjp!4v1560052402202!5m2!1svi!2sjp" width="600" height="450" frameBorder="0" style={{border:0}} allowFullScreen></iframe>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </Banner>
         <Banner bgClass="ht-pattern-bg2">
           <div className="hero-body ht-gallery">
             <div className="container is-widescreen">
@@ -161,84 +268,6 @@ class TopPage extends React.Component {
             </div>
           </div>
         </Banner>
-        <Banner bgClass="ht-pattern-bg1">
-          <div className="hero-body ht-card">
-            <div className="container is-widescreen">
-              <div className="tile is-vertical ht-padtop">
-                <div className="tile ht-card-title">
-                  <h1>Place</h1>
-                </div>
-                <div className="tile ht-card-title">
-                  <Img fixed={data.headding.childImageSharp.fixed} />
-                </div>
-                <div className="tile is-vertical">
-                  <div className="tile">
-                    <div className="tile ht-place-map">
-                      <div className="tile ht-right">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3805.608611670935!2d106.62016345102359!3d17.478437287965267!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31475729edd74511%3A0xb217ea600005190c!2zMjUgUGhhbiBDaHUgVHJpbmgsIMSQ4buTbmcgTeG7uSwgxJDhu5NuZyBI4bubaSwgUXXhuqNuZyBCw6xuaCwgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2sjp!4v1560052811536!5m2!1svi!2sjp" width="600" height="450" frameBorder="0" style={{border:0}} allowFullScreen></iframe>
-                      </div>
-                      <div className="tile ht-left">
-                        <div>
-                          <h1>Tư Gia Nhà Gái</h1>
-                          <p>25 Phan Chu Trinh, Đồng Mỹ, Đồng Hới, Quảng Bình, Việt Nam</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="tile">
-                    <div className="tile ht-place-map">
-                      <div className="tile ht-right">
-                        <div>
-                          <h1>Tư Gia Nhà Trai</h1>
-                          <p>178 Thanh Sơn, Nam Xuân, Krông Nô, Đak Nông, Việt Nam</p>
-                        </div>
-                      </div>
-                      <div className="tile ht-left">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3895.358855090208!2d107.78359795097634!3d12.492356991128256!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTLCsDI5JzMyLjUiTiAxMDfCsDQ3JzA4LjkiRQ!5e0!3m2!1svi!2sjp!4v1560052402202!5m2!1svi!2sjp" width="600" height="450" frameBorder="0" style={{border:0}} allowFullScreen></iframe>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </Banner>
-        <Banner bgClass="ht-pattern-bg3">
-          <div className="ht-mask"/>
-          <div className="hero-body ht-gallery">
-            <div className="container is-widescreen">
-              <div className="tile is-vertical ht-padtop">
-                <div className="tile ht-gallery-title">
-                  <h1>Thân mời | Gửi Lời Chúc</h1>
-                </div>
-                <div className="tile ht-gallery-title">
-                  <Img fixed={data.headding.childImageSharp.fixed} />
-                </div>
-                <div className="tile ht-guest">
-                  <div className="tile is-6 is-vertical ht-somewords">
-                    <h1>Thân Mời</h1>
-                    <p> 
-                      Do khoảng cách địa lý, công việc và nhiều lý do khác khiến chúng mình không thể về nước sớm để trao tận tay mọi người những tấm thiệp hồng.
-                    </p>
-                    <p>
-                      Cả hai đã cùng dốc sức chuẩn bị trang web này để gửi lời mời đến tất cả bạn bè, người thân cùng đến chung vui trong ngày vui của chúng mình!
-                    </p>
-                    <p>
-                      Sự có mặt của mọi người sẽ góp phần tạo nên một lễ cưới đặc biệt nhiều niềm vui và bạn sẽ là những người đồng hành cùng chúng mình trong cột móc quan trọng nhất của cuộc đời. 
-                    </p>
-                    <p>  
-                      Nếu yêu thương cả hai thì hãy dành thời gian đến chung vui cùng chúng mình nhé! 
-                    </p>
-                    <h1 className="has-text-right">Trân trọng!</h1>
-                  </div>
-                  <div className="tile is-6 ht-form">
-                    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfgFpQKSSHddqeJsIo792liorHnSiW8XTfuiJx39cHPNdrqWQ/viewform?embedded=true" width="640" height="628" frameBorder="0" marginHeight="0" marginWidth="0">Đang tải...</iframe>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </Banner>
         <Banner sizeClass="is-small" bgClass="ht-pattern-bg1">
           <div className="hero-body ht-card">
             <div className="container is-widescreen">
@@ -246,7 +275,7 @@ class TopPage extends React.Component {
                 <div className="tile is-vertical">
                   <img src="http://graph.facebook.com/100001147277648/picture?type=normal" />
                   <a target="_blank" href="https://www.facebook.com/profile.php?id=100001147277648">
-                    <span> hoangvx</span>
+                    <span> HoangVX</span>
                   </a>
                 </div>
                 <div className="tile is-1 ht-divide-vertical">
@@ -255,7 +284,7 @@ class TopPage extends React.Component {
                 <div className="tile is-vertical">
                   <img src="http://graph.facebook.com/100009074477752/picture?type=normal" />
                   <a target="_blank" href="https://www.facebook.com/profile.php?id=100009074477752">
-                    <span> Trang</span>
+                    <span> TrangDTK</span>
                   </a>
                 </div>
               </div>
