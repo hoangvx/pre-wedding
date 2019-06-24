@@ -2,9 +2,13 @@
 
 .ht-gallery-slide {
   background: grey;
-  min-height: calc(100vh - 350px);
+  min-height: calc(1344px * .5);
   width: 100%;
   margin-top: 30px;
+  
+  @include mobile-only {
+    min-height: calc(100vw * .5);
+  }
 }
 
 .ht-gallery-img {
@@ -28,7 +32,7 @@ body {
 }
 
 .slider {
-  min-height: 500px;
+  min-height: calc(1344px * .5);
   position: relative;
   overflow: hidden;
   display: -webkit-box;
@@ -46,6 +50,10 @@ body {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
+
+  @include mobile-only {
+    min-height: calc(100vw * .5);
+  }
 }
 .slider__nav {
   width: 20px;

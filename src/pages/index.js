@@ -178,14 +178,14 @@ class TopPage extends React.Component {
                   <div className="tile">
                     <div className="tile ht-card-title">
                       <div className="tile ht-left">
-                        <iframe title="if1" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3805.608611670935!2d106.62016345102359!3d17.478437287965267!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31475729edd74511%3A0xb217ea600005190c!2zMjUgUGhhbiBDaHUgVHJpbmgsIMSQ4buTbmcgTeG7uSwgxJDhu5NuZyBI4bubaSwgUXXhuqNuZyBCw6xuaCwgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2sjp!4v1560052811536!5m2!1svi!2sjp" width="600" height="450" frameBorder="0" style={{border:0}} allowFullScreen></iframe>
-                      </div>
-                      <div className="tile ht-right">
                         <div className="tile is-vertical">
                           <h2> Hôn lễ được cử hành tại tư gia nhà gái </h2>
                           <h3> Vào lúc 09:30 ngày 22/7/2019</h3>
                           <p> 25 Phan Chu Trinh, Đồng Mỹ, Đồng Hới, Quảng Bình, Việt Nam</p>
                         </div>
+                      </div>
+                      <div className="tile ht-right">
+                        <iframe title="if1" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3805.608611670935!2d106.62016345102359!3d17.478437287965267!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31475729edd74511%3A0xb217ea600005190c!2zMjUgUGhhbiBDaHUgVHJpbmgsIMSQ4buTbmcgTeG7uSwgxJDhu5NuZyBI4bubaSwgUXXhuqNuZyBCw6xuaCwgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2sjp!4v1560052811536!5m2!1svi!2sjp" width="600" height="450" frameBorder="0" style={{border:0}} allowFullScreen></iframe>
                       </div> 
                     </div>
                   </div>
@@ -214,14 +214,14 @@ class TopPage extends React.Component {
                   <div className="tile">
                     <div className="tile ht-card-title">
                       <div className="tile ht-left">
-                        <iframe title="if3" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3895.358855090208!2d107.78359795097634!3d12.492356991128256!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTLCsDI5JzMyLjUiTiAxMDfCsDQ3JzA4LjkiRQ!5e0!3m2!1svi!2sjp!4v1560052402202!5m2!1svi!2sjp" width="600" height="450" frameBorder="0" style={{border:0}} allowFullScreen></iframe>
-                      </div>
-                      <div className="tile ht-right">
                         <div className="tile is-vertical">
                           <h2>Hôn lễ được cử hành tại tư gia nhà trai </h2>
                           <h3>Vào lúc 10:00 ngày 26/7/2019</h3>
                           <p>178 Thanh Sơn, Nam Xuân, Krông Nô, Đak Nông, Việt Nam</p>
                         </div>
+                      </div>
+                      <div className="tile ht-right">
+                        <iframe title="if3" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3895.358855090208!2d107.78359795097634!3d12.492356991128256!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTLCsDI5JzMyLjUiTiAxMDfCsDQ3JzA4LjkiRQ!5e0!3m2!1svi!2sjp!4v1560052402202!5m2!1svi!2sjp" width="600" height="450" frameBorder="0" style={{border:0}} allowFullScreen></iframe>
                       </div>
                     </div>
                   </div>
@@ -230,10 +230,10 @@ class TopPage extends React.Component {
             </div>
           </div>
         </Banner>
-        <Banner bgClass="ht-pattern-bg2">
+        <Banner sizeClass="is-medium" bgClass="ht-pattern-bg2">
           <div className="hero-body ht-gallery">
             <div className="container is-widescreen">
-              <div className="tile is-vertical ht-padtop">
+              <div className="tile is-vertical">
                 <div className="tile ht-gallery-title">
                   <h4>Hoàng & Trang</h4>
                 </div>

@@ -316,7 +316,6 @@ iframe {
 
   .ht-somewords {
     justify-content: flex-start;
-    padding: 0 40px;
     h1 {
       color: $ht-lightred;
       font-size: 40px;
@@ -386,6 +385,13 @@ iframe {
     font-family: $font-dancing;
     color: $ht-white;
     font-size: 3em;
+  }
+
+  li a {
+    color: $ht-white;
+  }
+  li.is-active a {
+    color: $ht-lightgrey;
   }
 
   @include mobile-only {
