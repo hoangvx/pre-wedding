@@ -3,14 +3,17 @@ import React from "react";
 import NavBar from "../components/navbar";
 import Footer from "../components/footer";
 
-const Layout = ({ children }) => {
-  return (
-    <div>
-      <NavBar />
-      {children}
-      <Footer />
-    </div>
-  );
+class Layout extends React.Component {
+  render() {
+    let { children } = this.props
+    return (
+      <div>
+        <NavBar />
+        {children}
+        <Footer />
+      </div>
+    )
+  }
 };
 
 export default Layout;

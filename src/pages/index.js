@@ -21,7 +21,6 @@ class TopPage extends React.Component {
     let duration = moment.duration(diff, 'milliseconds')
     this.state = { duration }
   }
-  // componentDidMount() {}
 
   render() {
     const { data } = this.props

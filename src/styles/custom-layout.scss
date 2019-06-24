@@ -52,6 +52,11 @@ iframe {
   background-position: center 52%;
   background-repeat: no-repeat;
   background-size: cover;
+  position: relative;
+
+  .ht-mask {
+    opacity: 0.4;
+  }
 }
 
 .ht-pattern-bg1 {
@@ -380,6 +385,14 @@ iframe {
   h1  {
     font-family: $font-dancing;
     color: $ht-white;
+    font-size: 3em;
+  }
+
+  @include mobile-only {
+    padding-top: 50px;
+    h1 {
+      font-size: 2em;
+    }
   }
 }
 
@@ -395,6 +408,7 @@ iframe {
     @include mobile-only {
       width: 100%;
       font-size: 12px;
+      height: auto;
     }
   }
 

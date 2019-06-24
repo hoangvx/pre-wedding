@@ -3,9 +3,10 @@ import React from "react"
 const BreadCrumb = ({ root, page }) => {
   return (
     <section className={`hero is-medium ht-banner-bg-stories`}>
+      <div className="ht-mask"/>
       <div className="hero-body">
         <div className="container is-widescreen ht-breadcrumb">
-          <h1 className="is-size-1">Câu chuyện tình yêu</h1>
+          <h1>Câu chuyện tình yêu</h1>
           { root && page ? (
               <nav className="breadcrumb" aria-label="breadcrumbs">
                 <ul>
