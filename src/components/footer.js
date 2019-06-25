@@ -11,20 +11,21 @@ const Banner = () => (
       <section className={`hero is-dark`}>
         <div className="hero-body">
           <nav className="navbar">
-            <div className="navbar-brand">
-              <Img fixed={ data.logo.childImageSharp.fixed } /> 
+            <div className="navbar-brand ht-brand">
+              <p>
+                <span>Copyright </span>
+                <FontAwesomeIcon icon={faCopyright} />
+                <span> 2019 </span>
+                <br className="is-mobile-only" />
+                <span>Võ Xuân Hoàng</span>
+                <span> & </span>
+                <span>Đào Thị Khánh Trang</span>
+              </p>
             </div>
             <div className="navbar-menu">
-              <div className="navbar-end">
-                <div className="navbar-item">
-                  <p>
-                    <span>Copyright </span>
-                    <FontAwesomeIcon icon={faCopyright} />
-                    <span> 2019 </span>
-                    <span>Võ Xuân Hoàng</span>
-                    <span> & </span>
-                    <span>Đào Thị Khánh Trang</span>
-                  </p>
+              <div className="navbar-end ht-navbar-foot">
+                <div className="navbar-item ht-brand">
+                  <Img className="ht-brand-img" fixed={ data.logo.childImageSharp.fixed } /> 
                 </div>
               </div>
             </div>

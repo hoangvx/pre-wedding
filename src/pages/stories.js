@@ -8,7 +8,7 @@ import Banner from "../components/banner";
 import BreadCrumb from "../components/breadcrumb";
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCalendar, faArrowRight } from "@fortawesome/free-solid-svg-icons"
+import { faCalendar } from "@fortawesome/free-solid-svg-icons"
 
 class Stories extends React.Component {
   render() {
@@ -37,15 +37,11 @@ class Stories extends React.Component {
                         <Img className="ht-story-img" fluid={node.frontmatter.thumbnail.childImageSharp.fluid} />
                       </div>
                       <div className={ isOdd ? 'ht-story-right' : 'ht-story-left' }>
-                        <h1>{node.frontmatter.title}</h1>
+                        <Link to={`/stories${node.fields.slug}`}>
+                          <h1>{node.frontmatter.title}</h1>
+                        </Link>
                         <h3><FontAwesomeIcon icon={faCalendar} />{node.frontmatter.date}</h3>
                         <p>{node.excerpt}</p>
-                        <Link className="button is-outlined is-link" to={`/stories${node.fields.slug}`}>
-                          <span>Đọc Tiếp</span>
-                          <span className="icon">
-                            <FontAwesomeIcon icon={faArrowRight} />
-                          </span>
-                        </Link>
                       </div>
                     </div>
                   )

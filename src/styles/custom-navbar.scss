@@ -1,10 +1,17 @@
 @import 'custom-master';
 
+.ht-navbar-foot {
+  height: 100px;
+}
+
 .ht-navbar {
   background-color: rgba(255, 255, 255, 0.79);
   height: 100px;
   box-shadow: 0px 0px 25px -10px;
+}
 
+.ht-navbar,
+.ht-navbar-foot {
   .ht-brand {
     width: 300px;
     .ht-brand-img {
@@ -16,6 +23,10 @@
 
     &:hover {
       background-color: transparent !important;
+    }
+
+    p {
+      
     }
   }
 
