@@ -2,8 +2,8 @@ module.exports = {
   siteMetadata: {
     title: `Hoang & Trang`,
     author: `HoangVX`,
-    description: `A blogs for ours wedding.`,
-    siteUrl: `https://xxx.netlify.com/`,
+    description: `Nơi chia sẻ những thông tin về đám cưới của Hoàng & Trang`,
+    siteUrl: `https://hoangvx.info`,
     wedding: {
       date: '2019-07-22',
       groom: {
@@ -75,7 +75,7 @@ module.exports = {
         background_color: `#ffffff`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `content/assets/gatsby-icon.png`,
+        icon: `content/assets/favicon-16x16.png`,
       },
     },
     `gatsby-plugin-offline`,

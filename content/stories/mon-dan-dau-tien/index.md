@@ -1,7 +1,7 @@
 ---
 title: Con đường ngắn nhất đến được tình yêu là thông qua dạ dày
 date: "2019-06-18T22:40:32.169Z"
-description: This is a custom description for SEO and Open Graph purposes, rather than the default generated excerpt. Simply add a description field to the frontmatter.
+description: Những món ăn mà Hoàng đã nấu cho Trang
 thumbnail: ../../assets/g12.jpg
 ---
 

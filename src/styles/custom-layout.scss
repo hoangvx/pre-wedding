@@ -500,3 +500,34 @@ iframe {
     border-radius: 30px;
   }
 }
+
+.ht-donate {
+  padding: 0 50px;
+
+  .ht-donate-title {
+    justify-content: center;
+    text-align: center;
+    padding-top: 5px;
+
+    h4 {
+      color: $ht-lightred;
+    }
+
+    h1 {
+      font-size: 50px;
+    }
+  }
+
+  .ht-donate-content {
+    justify-content: center;
+    padding-top: 20px;
+
+    .card {
+      margin: 0 10px;
+
+      @include mobile-only {
+        margin: 0 0 20px 0;
+      }
+    }
+  }
+}

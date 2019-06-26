@@ -22,6 +22,21 @@ class TopPage extends React.Component {
     this.state = { duration }
   }
 
+  _handleCountDown() {
+    let { duration }  = this.state
+    this.setState({
+      duration: moment.duration(duration.as('milliseconds') - 1000, 'milliseconds')
+    })
+  }
+
+  componentDidMount() {
+    this.interval = setInterval(() => this._handleCountDown(), 1000)
+  }
+
+  componentWillUnmount() {
+    clearInterval(this.interval);
+  }
+
   render() {
     const { data } = this.props
     let { duration } = this.state
@@ -30,7 +45,7 @@ class TopPage extends React.Component {
     const weddingDateFmt = weddingDate.format('DD/MM/YYYY')
     return (
       <Layout>
-        <SEO title="Top" />
+        <SEO title="Pre-Wedding" />
         <Banner bgClass="ht-banner-bg">
           <div className="ht-snow"/>
           <div className="hero-body ht-top-banner">
@@ -128,7 +143,7 @@ class TopPage extends React.Component {
             <div className="container is-widescreen">
               <div className="tile is-vertical ht-padtop">
                 <div className="tile ht-gallery-title">
-                  <h1>Gửi Lời Chúc</h1>
+                  <h1>Lời Ngỏ</h1>
                 </div>
                 <div className="tile ht-gallery-title">
                   <Img fixed={data.headding.childImageSharp.fixed} />
@@ -143,15 +158,15 @@ class TopPage extends React.Component {
                       Thân gửi lời mời trân trọng nhất đến anh, chị em, bạn bè cùng người thương đến chung vui cùng Hoàng và Trang trong ngày vui của chúng mình. 
                     </p>
                     <p>
-                      Đây không chỉ là dịp thể hiện tình cảm và sự yêu quý của mọi người dành cho cả 2 đứa mình mà còn là dịp để chúng ta gặp mặt nhau sau nhiều ngày, nhiều tháng, nhiều năm xa cách.
+                      Đây không chỉ là dịp thể hiện tình cảm và sự yêu quý của mọi người dành cho cả 2 đứa mình mà còn là dịp để gặp mặt nhau sau nhiều ngày, nhiều tháng, nhiều năm xa cách.
                     </p>
                     <p>  
-                      Nếu có thể sắp xếp được thời gian và công việc hãy cùng đồng hành với chúng mình trong vui và ngày trọng đại này nhé!
+                      Nếu có thể sắp xếp được thời gian và công việc hãy cùng đồng hành với chúng mình trong ngày vui trọng đại này nhé!
                     </p>
                     <p>
                       Trong trường hợp không thể tham gia được, còn chần chừ gì nữa mà không gửi cho chúng mình những lời chúc có cánh!
                     </p>
-                    <p>Để có thể đón tiếp chu đáo nhất, hãy cho chúng mình biết bạn có thể tham gia hay không và số lượng người tham gia nhé! </p>
+                    <p>Để có thể đón tiếp chu đáo nhất, hãy cho chúng mình biết bạn có thể tham gia hay không và số lượng người tham gia ở form bên cạnh nhé! </p>
                     <p className="has-text-right">From Japan with big love </p>
                     <h1 className="has-text-right">Hoàng & Trang</h1>
                     <h1 className="has-text-right">Trân trọng!</h1>
@@ -246,6 +261,71 @@ class TopPage extends React.Component {
                 </div>
                 <div className="tile">
                   <Gallery />
+                </div>
+              </div>
+            </div>
+          </div>
+        </Banner>
+        <Banner sizeClass="is-small" bgClass="ht-pattern-bg1">
+          <div className="hero-body ht-donate">
+            <div className="container is-widescreen">
+              <div className="tile is-vertical">
+                <div className="tile ht-donate-title">
+                  <h1>Thông tin để Donate</h1>
+                </div>
+                <div className="tile ht-donate-title">
+                  <h4>Dành cho những bạn không đến tham gia được</h4>
+                </div>
+                <div className="tile ht-donate-title">
+                  <Img fixed={data.headding.childImageSharp.fixed} />
+                </div>
+                <div className="tile ht-donate-content">
+                  <div className="card">
+                    <div className="card-content">
+                      <div className="media">
+                        <div className="media-left">
+                          <figure className="image is-48x48">
+                            <img alt="" src="http://graph.facebook.com/100001147277648/picture?type=square" />
+                          </figure>
+                        </div>
+                        <div className="media-content">
+                          <p className="title is-4">{ data.site.siteMetadata.wedding.groom.name }</p>
+                          <p className="subtitle is-6">hoang.vx@outlook.jp</p>
+                        </div>
+                      </div>
+                      <div className="content">
+                        Cảm ơn bạn nào gửi tiền cho <i>Hoàng</i> nhá :3 haha
+                        <hr />
+                        Ngân hàng Tiên Phong Bank
+                        <br />
+                        Chi nhánh Hải Châu Đà Nẵng
+                        <br />
+                        Số tài khoản: <strong>00036265003</strong>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="card">
+                    <div className="card-content">
+                      <div className="media">
+                        <div className="media-left">
+                          <figure className="image is-48x48">
+                            <img alt="" src="http://graph.facebook.com/100009074477752/picture?type=square" />
+                          </figure>
+                        </div>
+                        <div className="media-content">
+                          <p className="title is-4">{ data.site.siteMetadata.wedding.bride.name }</p>
+                          <p className="subtitle is-6">trangdtk93@gmail.com</p>
+                        </div>
+                      </div>
+                      <div className="content">
+                        Nhận quà dưới mọi hình thức ahihi ⬇︎
+                        <hr />
+                        Thông tin đang cập nhật
+                        <br />
+                        Số tài khoản: <strong>...</strong>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
