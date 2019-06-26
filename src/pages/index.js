@@ -46,6 +46,9 @@ class TopPage extends React.Component {
     return (
       <Layout>
         <SEO title="Pre-Wedding" />
+        <audio className="ht-audio" src="./cuoi_nhau_di.mp3" controls autoPlay>
+          <p>If you are reading this, it is because your browser does not support the audio element.</p>
+        </audio>
         <Banner bgClass="ht-banner-bg">
           <div className="ht-snow"/>
           <div className="hero-body ht-top-banner">
