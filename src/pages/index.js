@@ -46,9 +46,6 @@ class TopPage extends React.Component {
     return (
       <Layout>
         <SEO title="Pre-Wedding" />
-        <audio className="ht-audio" src="./cuoi_nhau_di.mp3" controls autoPlay>
-          <p>If you are reading this, it is because your browser does not support the audio element.</p>
-        </audio>
         <Banner bgClass="ht-banner-bg">
           <div className="ht-snow"/>
           <div className="hero-body ht-top-banner">
@@ -210,14 +207,14 @@ class TopPage extends React.Component {
                   <div className="tile">
                     <div className="tile ht-card-title">
                       <div className="tile ht-left">
-                        <iframe title="if2" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15223.560002856604!2d106.6186307!3d17.4649782!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x91d292fcbb7b2557!2zTmjDoCBIw6BuZyBUaeG7h2MgQ8aw4bubaSBSb3lhbCAtIEPDtG5nIFR5IFROSEggWEQgJiBUTSBI4bqjaSBUaMOgbmg!5e0!3m2!1sen!2sjp!4v1561020814787!5m2!1sen!2sjp" width="600" height="450" frameBorder="0" style={{border:0}} allowFullScreen></iframe>
-                      </div>
-                      <div className="tile ht-right">
                         <div className="tile is-vertical">
                           <h2>Tiệc cưới diễn ra tại Nhà hàng Tiệc cưới Royal Queen </h2>
                           <h3>Vào 17:00 ngày 22/7/2019</h3>
                           <p>53 Nguyễn Hữu Cảnh, TP.Đồng Hới, Quảng Bình</p>
                         </div>
+                      </div>
+                      <div className="tile ht-right">
+                        <iframe title="if2" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15223.560002856604!2d106.6186307!3d17.4649782!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x91d292fcbb7b2557!2zTmjDoCBIw6BuZyBUaeG7h2MgQ8aw4bubaSBSb3lhbCAtIEPDtG5nIFR5IFROSEggWEQgJiBUTSBI4bqjaSBUaMOgbmg!5e0!3m2!1sen!2sjp!4v1561020814787!5m2!1sen!2sjp" width="600" height="450" frameBorder="0" style={{border:0}} allowFullScreen></iframe>
                       </div>
                     </div>
                   </div>

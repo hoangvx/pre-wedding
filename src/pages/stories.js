@@ -23,7 +23,8 @@ class Stories extends React.Component {
           <div className="hero-body ht-card">
             <div className="container is-widescreen">
               <div className="tile ht-card-title">
-                <h1>Ký Sự</h1>
+                <h1>Câu chuyện tình yêu
+                </h1>
               </div>
               <div className="tile ht-card-title">
                 <Img fixed={data.headding.childImageSharp.fixed} />
