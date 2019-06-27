@@ -7,21 +7,11 @@ import cnd from './cuoi_nhau_di.mp3';
 
 class Layout extends React.Component {
 
-  componentDidMount() {
-    // this.audio.play();
-  }
-
   render() {
     let { children } = this.props
     return (
       <div>
-        <audio
-          ref={audio => this.audio = audio}
-          className="ht-audio"
-          controls autoPlay={true}>
-          <source src={cnd} type="audio/mp3" />
-          Your browser does not support the audio element.
-        </audio>
+        <iframe title="audio" className="ht-audio" src={cnd} allow="autoplay" id="iframeAudio"/>
         <NavBar />
         {children}
         <Footer />
