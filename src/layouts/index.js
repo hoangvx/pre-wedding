@@ -14,6 +14,8 @@ class Layout extends React.Component {
         <audio
           ref={audio => this.audio = audio}
           id="audio"
+          className="ht-audio"
+          controls={true}
           autoPlay={true}>
           <source src={cnd} type="audio/mp3" />
           Your browser does not support the audio element.

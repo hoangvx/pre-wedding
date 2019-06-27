@@ -533,5 +533,9 @@ iframe {
 }
 
 .ht-audio {
-  display: none;
+  // display: none;
+  position: fixed;
+  bottom: 5px;
+  right: 5px;
+  opacity: .5;
 }
