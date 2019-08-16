@@ -106,7 +106,7 @@ class TopPage extends React.Component {
                 <div className="tile ht-card-title">
                   <Img fixed={data.headding.childImageSharp.fixed} />
                 </div>
-                <div className="tile is-vertical ">
+                {/* <div className="tile is-vertical ">
                   <div className="ht-divide">
                     <h4><b>Đừng Bỏ Lỡ! Chỉ Còn </b>
                     </h4>
@@ -132,7 +132,7 @@ class TopPage extends React.Component {
                   <div className="ht-divide">
                     <h4><b>Là Chúng Tớ Về Chung Một Nhà Rồi Đấy!</b></h4>
                   </div>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
