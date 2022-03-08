@@ -149,7 +149,7 @@ class TopPage extends React.Component {
                   <Img fixed={data.headding.childImageSharp.fixed} />
                 </div>
                 <div className="tile ht-guest">
-                  <div className="tile is-6 is-vertical ht-somewords">
+                  <div className="tile is-vertical ht-somewords">
                     <h1>Thân Mời</h1>
                     <p> 
                       Ngay từ những ngày đầu chuẩn bị cho lễ cưới, cả hai đã ấp ủ cho mình một trang web cưới - như là một nơi lưu giữ, đếm ngược lại sự kiện trọng đại này của mình và cũng sẽ là cầu nối gửi lời mời của chúng mình đến bạn bè và người thân ở khắp mọi nơi. 
@@ -171,15 +171,15 @@ class TopPage extends React.Component {
                     <h1 className="has-text-right">Hoàng & Trang</h1>
                     <h1 className="has-text-right">Trân trọng!</h1>
                   </div>
-                  <div className="tile is-6 ht-form">
+                  {/* <div className="tile is-6 ht-form">
                     <iframe title="ggs" src="https://docs.google.com/forms/d/e/1FAIpQLSePOVzpYWddAurfr9TOpHYh34KjXT6YGZ_956x_nWortpDw0A/viewform?embedded=true" width="640" height="628" frameBorder="0">Loadding...</iframe>
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </div>
           </div>
         </Banner>
-        <Banner bgClass="ht-pattern-bg1">
+        {/* <Banner bgClass="ht-pattern-bg1">
           <div className="hero-body ht-card">
             <div className="container ht-place-map is-widescreen">
               <div className="tile is-vertical ht-padtop">
@@ -244,7 +244,7 @@ class TopPage extends React.Component {
               </div>
             </div>
           </div>
-        </Banner>
+        </Banner> */}
         <Banner sizeClass="is-medium" bgClass="ht-pattern-bg2">
           <div className="hero-body ht-gallery">
             <div className="container is-widescreen">
@@ -266,7 +266,7 @@ class TopPage extends React.Component {
             </div>
           </div>
         </Banner>
-        <Banner sizeClass="is-small" bgClass="ht-pattern-bg1">
+        {/* <Banner sizeClass="is-small" bgClass="ht-pattern-bg1">
           <div className="hero-body ht-donate">
             <div className="container is-widescreen">
               <div className="tile is-vertical">
@@ -330,7 +330,7 @@ class TopPage extends React.Component {
               </div>
             </div>
           </div>
-        </Banner>
+        </Banner> */}
       </Layout>
     )
   }
